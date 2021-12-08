@@ -1,0 +1,16 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Aufgabe 7
+    command: javac BinTree.java && java BinTree t1.dot t2.dot && dot -Tpng t1.dot > t1.png && dot -Tpng t2.dot > t2.png
+  - name: Javadoc
+    command: javadoc -d doc BinTree.java
+  - name: Javadoc Server
+    command: |
+      cd doc
+      python3 -m http.server 3000
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
