@@ -1,5 +1,7 @@
 public abstract class Command {
 
+    VCS vcs;
+
     public void execute() {
         // override me!
     }
