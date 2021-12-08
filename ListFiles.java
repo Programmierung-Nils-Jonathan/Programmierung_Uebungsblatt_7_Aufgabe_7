@@ -6,7 +6,9 @@ public class ListFiles extends Command {
 
     @Override
     public void execute() {
-        Util.listFiles(vcs.getRootDir());
+        for(String file : Util.listFiles(vcs.getRootDir())){
+            System.out.println(file);
+        }
     }
     
 }
