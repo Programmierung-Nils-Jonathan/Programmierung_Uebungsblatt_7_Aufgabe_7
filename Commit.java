@@ -37,9 +37,6 @@ public class Commit extends ListFiles {
             String srcFilename = Util.appendFileOrDirname(vcs.getBackupDir(), file);
             String destFilename = Util.appendFileOrDirname(timeStampDir, file);
 
-            System.out.println("srcFilename: " + srcFilename);
-            System.out.println("destFilename: " + destFilename);
-
             Util.moveFile(srcFilename, destFilename);
         }
     }
