@@ -3,7 +3,7 @@ image:
 
 tasks:
   - name: Aufgabe 7
-    command: javac Main.java && java Main
+    command: javac Main.java && java Main testRepository
   - name: Javadoc
     command: javadoc -d doc Main.java
   - name: Javadoc Server

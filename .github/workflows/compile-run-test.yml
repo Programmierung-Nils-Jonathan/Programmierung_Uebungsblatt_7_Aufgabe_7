@@ -22,4 +22,4 @@ jobs:
       - name: Compile and Run
         run: |
           javac Main.java
-          java Main
+          java Main testRepository
