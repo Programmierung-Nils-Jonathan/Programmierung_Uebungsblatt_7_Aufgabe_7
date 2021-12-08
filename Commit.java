@@ -35,10 +35,10 @@ public class Commit extends ListFiles {
 
         for(String file : backupFiles) {
             String srcFilename = Util.appendFileOrDirname(vcs.getBackupDir(), file);
-            String destFilename = Util.appendFileOrDirname(Util.appendFileOrDirname(vcs.getBackupDir(), timeStampDir), file);
+            String destFilename = Util.appendFileOrDirname(timeStampDir, file);
 
-            System.out.println("srcFilename" + srcFilename);
-            System.out.println("destFilename" + destFilename);
+            System.out.println("srcFilename: " + srcFilename);
+            System.out.println("destFilename: " + destFilename);
 
             Util.moveFile(srcFilename, destFilename);
         }

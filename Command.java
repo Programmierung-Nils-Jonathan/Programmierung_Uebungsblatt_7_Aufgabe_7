@@ -13,14 +13,11 @@ public abstract class Command {
     public static Command parse(String cmdName, VCS vcs) {
         switch (cmdName) {
             case "exit":
-                Exit exit = new Exit(vcs);
-                return exit;
+                return new Exit(vcs);
             case "listfiles":
-                ListFiles listFiles = new ListFiles(vcs);
-                return listFiles;
+                return new ListFiles(vcs);
             case "commit":
-                Commit commit = new Commit(vcs);
-                return commit;
+                return new Commit(vcs);
             default:
                 return null;
         }
