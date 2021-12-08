@@ -6,9 +6,15 @@ public class Commit extends ListFiles {
 
     @Override
     public void execute() {
+        System.out.println("createTimeStampDir");
+
         String timeStampDir = this.createTimeStampDir();
 
+        System.out.println("moveOldBackupDirFiles");
+
         this.moveOldBackupDirFiles(timeStampDir);
+
+        System.out.println("copyRootFiles");
 
         this.copyRootFiles();
 
@@ -30,6 +36,10 @@ public class Commit extends ListFiles {
         for(String file : backupFiles) {
             String srcFilename = Util.appendFileOrDirname(vcs.getBackupDir(), file);
             String destFilename = Util.appendFileOrDirname(Util.appendFileOrDirname(vcs.getBackupDir(), timeStampDir), file);
+
+            System.out.println("srcFilename" + srcFilename);
+            System.out.println("destFilename" + destFilename);
+
             Util.moveFile(srcFilename, destFilename);
         }
     }
