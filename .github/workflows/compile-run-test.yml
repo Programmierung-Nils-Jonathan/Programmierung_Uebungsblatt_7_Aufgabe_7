@@ -24,7 +24,6 @@ jobs:
       - name: Java Version
         run: java -version
 
-      - name: Compile and Run
+      - name: Compile
         run: |
           javac Main.java
-          java Main testRepository
