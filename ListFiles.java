@@ -1,4 +1,4 @@
-public class ListFiles extends Command {
+public non-sealed class ListFiles extends Command {
 
     public ListFiles(VCS vcs) {
         super(vcs);
