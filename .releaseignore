@@ -4,3 +4,5 @@
 .github/
 LICENSE
 testRepository/
+Util.java
+VCS.java
