@@ -1,3 +1,5 @@
+[![Compile and Run Test](https://github.com/Programmierung-Nils-Jonathan/Programmierung_Uebungsblatt_7_Aufgabe_7/actions/workflows/compile-run-test.yml/badge.svg?branch=main)](https://github.com/Programmierung-Nils-Jonathan/Programmierung_Uebungsblatt_7_Aufgabe_7/actions/workflows/compile-run-test.yml)
+
 # Programmierung Übungsblatt 7 Aufgabe 7
 
 
