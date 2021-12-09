@@ -1,4 +1,4 @@
-# Programmierung_Uebungsblatt_7_Aufgabe_7
+# Programmierung Übungsblatt 7 Aufgabe 7
 
 
 ## Usage
