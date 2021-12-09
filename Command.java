@@ -1,4 +1,4 @@
-public sealed abstract class Command permits Exit, ListFiles{
+public sealed abstract class Command permits Exit, ListFiles {
 
     VCS vcs;
 

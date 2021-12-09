@@ -1,20 +1,19 @@
-public class Commit extends ListFiles {
+public class Commit extends ListFiles implements Modifying {
 
     public Commit(VCS vcs) {
         super(vcs);
     }
 
+    public String getInformation() {
+        return "Files: Copy and Move \n" +
+            "Directory: create";
+    }
+
     @Override
     public void execute() {
-        System.out.println("createTimeStampDir");
-
         String timeStampDir = this.createTimeStampDir();
 
-        System.out.println("moveOldBackupDirFiles");
-
         this.moveOldBackupDirFiles(timeStampDir);
-
-        System.out.println("copyRootFiles");
 
         this.copyRootFiles();
 

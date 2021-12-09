@@ -24,9 +24,16 @@ public class Main {
                     System.out.print("> ");
                     Command cmd = Command.parse(scanner.nextLine(), vcs);
                     if (cmd != null) {
-                        //TODO
-                    
-                    
+                        String information = "";
+                        if(cmd instanceof Modifying) {
+                            information = ((Modifying) cmd).getInformation();
+                        }
+
+                        if(information != "") {
+                            System.out.println("This command does the following modifying operations:");
+                            System.out.println(information);
+                        }
+                        
                         cmd.execute();
                     }
                 }
